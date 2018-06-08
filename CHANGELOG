@@ -1,0 +1,14 @@
+~~~~~~~~~~~~~~~~~~~
+version 1.0
+~~~~~~~~~~~~~~~~~~~
+
+* Multithreading
+* Ability to use previously downloaded TOR, Alexa … files
+* Modified download to check for SSL Library. Had an issue with BD requiring a cipher that the old versions of python SSL did not support
+* Supports large IP lists.
+* Faster execution.
+* 1015 IPs
+* Previously in 2m 24 s / Now 6 s
+* 4909 IPs
+* Killed after an hour
+* Now 2m 46 s

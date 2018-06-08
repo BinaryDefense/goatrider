@@ -1,0 +1,7 @@
+Todo
+more multithreading on the download
+Change logic to write results to disk rather than keep in memory.
+Reduce memory footprint.
+Faster results
+Look into restructuring parse_ip_file to also check the lists while checking for hostname.
+Speed increase should double.
