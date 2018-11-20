@@ -359,7 +359,10 @@ def parse_ip_file( fileinput ):
     len_cl = len(content_lines)
     max_lines = MAX_LINES
     if len_cl < MAX_LINES:
-        max_lines = len_cl/CPU_CORES 
+        if len_cl/CPU_CORES < 1:
+            max_lines = 1
+        else:
+            max_lines = len_cl/CPU_CORES 
     tmp = []
     for index in range( 0, len_cl, max_lines):
         if index+max_lines > len_cl:
